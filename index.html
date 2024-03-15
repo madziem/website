@@ -4,7 +4,7 @@
       <title>My Cool Website</title>
       <style>
          body {
-            background-color: #caf4e0e4; /* light green */
+            background-color: #e7fef9; /* light green */
          }
          h1, h2 {
             color: #070707; /* black */
@@ -12,14 +12,27 @@
          p {
             color: #333; /* dark grey */
          }
+         .container {
+            margin-left: 20px; /* Adjusts the left margin to align the container to the left */
+            max-width: 850px; /* preferred max width */
+            padding: 20px;
+         }
+         .footer-container {
+            background-color: #fef9e7; /* Pastel yellow background for the footer */
+            padding: 20px;
+            margin-left: 20px; /* Aligns with the main container */
+            max-width: 850px; /* Matches the main container width */
+            border-radius: 10px; /* Adds a border radius */
+         }
          /* Add more custom styles here */
       </style>
    </head>
    <body>
+      <div class="container"> <!-- Container added here -->
       <h1>Welcome to my website! ⭐️</h1>
       <section id="about-me">
          <h2>About Me</h2>
-         <p>
+            <p>
             👋🏻 I'm a versatile professional with a background in 
             business administration, law, and data analytics. 
             I received a joint JD and MBA degree from Samford University. 
@@ -36,13 +49,16 @@
          and immersing myself in a good book.
          </p>
       </section>
+   </div> <!-- Closing container div -->
    </body>
    <footer>
-      <ul>
-         <li><a href="mailto:maddiemcbrayer@gmail.com">Email</a></li>
-         <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
-         <li><a href="https://github.com/yourusername">GitHub</a></li>
-         <!-- Add more links here -->
-      </ul>
+      <div class="footer-container"> <!-- Footer container with different background color -->
+         <ul>
+            <li><a href="mailto:maddiemcbrayer@gmail.com">Email</a></li>
+            <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
+            <li><a href="https://github.com/yourusername">GitHub</a></li>
+            <!-- Add more links here -->
+         </ul>
+      </div>
    </footer>
 </html>
