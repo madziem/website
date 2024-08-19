@@ -3,11 +3,18 @@
    <head>
       <title>My Cool Website</title>
       <style>
+         body, h1, h2, h3, h4 { /* Apply font-family to body and headings */
+            font-family: Trebuchet, sans-serif;
+         }
          body {
             background-color: #e7feed; /* light green */
+            font-family: Trebuchet, sans-serif;
+            margin: 25px;
          }
-         h1, h2 {
+         h1, h2, h3 , h4 {
             color: #070707; /* black */
+            text-align: left;
+            text-decoration: none;
          }
          p {
             color: #333; /* dark grey */
@@ -24,36 +31,90 @@
             max-width: 850px; /* Matches the main container width */
             border-radius: 10px; /* Adds a border radius */
          }
+        .recipe {
+            background: #f4f4f4;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+          }
+        .recipe h2 {
+            color: #77b300;
+          }
+        .recipe img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+         }
+        .recipe ul, .recipe ol {
+            margin: 10px 0 10px 20px;
+         }
+         .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            background-color: #77b300;
+            color: white;
+            border: none;
+            border-radius: 5px;
+         }
          /* Add more custom styles here */
       </style>
    </head>
    <body>
-      <div class="container"> <!-- Container added here -->
-      <h1>Welcome to my website! ⭐️</h1>
-      <section id="about-me">
+      <header>
+         <div class="container"> <!-- Container added here -->
+         <h1>Welcome to my website! ⭐️</h1>
+            <nav>
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="recipes.html">Recipes</a></li>
+               </ul>
+               </nav>
+           </div>
+       </header>
+       <div class="container">
+         <section id="about-me">
          <h2>About Me</h2>
+            <img src="images/pepper_fam.jpeg" alt="Photo of Pepper" width="100px">
             <p>
-            👋🏻 I'm a versatile professional with a background in 
-            business administration, law, and data analytics. 
-            I received a joint JD and MBA degree from Samford University. 
-         </p>
-         <p>
-            I've developed a strong foundation in critical thinking, problem-solving, 
-            and data-driven decision-making. 
-            Currently, I leverage my skills focusing on optimizing data processes and 
-            enhancing efficiency. 
-         </p>
-         <p>
-         I have a passion for continuous learning and innovation. 
-         In my freetime, I enjoy exploring with my Maltipom Pepper 🐶, 
-         and immersing myself in a good book.
-         </p>
+               👋🏻 I'm a versatile professional with a background in business, law, and data analytics. 
+               I received a joint JD and MBA degree from Samford University. 
+            </p>
+            <p>
+               I've developed a strong foundation in critical thinking, problem-solving, 
+               and data-driven decision-making. 
+               Currently, I leverage my skills focusing on optimizing data processes and 
+               enhancing efficiency. 
+            </p>
+            <p>
+               In my freetime, I enjoy exploring with my Maltipom, Pepper 🐶, 
+               and cooking for family. 
+               Here you can find a collection of my favorite recipes.  
+            </p>
+            <a href="recipes.html" class="button">Go to Recipes</a>
+            <br> <br> <br> <br>
+         </section>
+      </div>
+      <section id="recent work">
+         <h3>Recent Work</h3>
+            <p>
+               Recent projects playing around with coding:
+               <ul>
+                  <li>Created my own website.</li>
+                  <li>Completed the Google Analytics course through Coursera.</li>  
+                  <li>Finished 100 Days of Code on Replit.</li>
+               </ul>  
+            </p>
       </section>
    </div> <!-- Closing container div -->
    </body>
    <footer>
       <div class="footer-container"> <!-- Footer container with different background color -->
          <ul>
+            <h4>Contact Me</h4>
             <li><a href="mailto:maddiemcbrayer@gmail.com">Email</a></li>
             <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
             <li><a href="https://github.com/yourusername">GitHub</a></li>
@@ -62,3 +123,5 @@
       </div>
    </footer>
 </html>
+
+
