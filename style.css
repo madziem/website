@@ -1,0 +1,110 @@
+/* General Styles */
+html, body {
+    background-color: #e7feed; /* light green */
+    margin: 25px;
+    font-family: Trebuchet, sans-serif; /* Apply font-family to body and headings */
+}
+
+h1, h2, h3, h4 {
+    color: #070707; /* black */
+    text-align: left;
+    text-decoration: none;
+}
+
+p {
+    color: #333; /* dark grey */
+}
+
+/* Container Styles */
+.container, .footer-container {
+    margin-left: 20px; /* Aligns with the main container */
+    max-width: 850px; /* preferred max width */
+    padding: 20px;
+}
+
+.footer-container {
+    background-color: #e6eae5e4; /* background for the footer */
+    border-radius: 10px; /* Adds a border radius */
+}
+
+/* Header Styles */
+header {
+    background: #e6eae5e4;
+    color: #fff;
+    padding: 15px 20px;
+    border-bottom: #016e39 3px solid;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #333;
+}
+
+/* Recipe Styles */
+.recipe {
+    background: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.recipe h2 {
+    color: #016e39;
+    font-family: fancy;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.recipe ul, .recipe ol {
+    margin: 10px 0 10px 20px;
+    list-style-type: disc;
+}
+
+.recipe ul li, .recipe ol li {
+    display: list-item; /* Ensure list items are displayed as block elements */
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #016e39;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* General List Styles */
+ul {
+    list-style-type: disc; /* Ensures bullet points are shown */
+    padding-left: 20px; /* Adds some padding to the left */
+}
+
+li {
+    display: list-item; /* Ensure list items are displayed as block elements */
+}
+
+/* Add more custom styles here */
